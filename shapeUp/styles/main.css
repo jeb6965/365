@@ -1,0 +1,167 @@
+/*Jordan Boykin*/
+html {
+	background-image: 
+		url('../images/bg.jpeg');
+}
+h1, h2, h3, p{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 10px auto;
+	max-width: 1200px;
+	border: 3px solid steelblue;
+	box-shadow: 5px 5px 10px 5px black, -5px 0 10px 5px black;
+	background-color: white;
+}
+
+a{
+	font-weight: bold;
+}
+
+header{	
+	background-image: linear-gradient(to bottom, white, lightsteelblue);
+	padding: 15px 30px;
+	border-bottom: 2px solid steelblue;
+	& img{
+		float: left;
+	}
+	& h2 {
+		color: steelblue;
+		font-style: italic;
+		font-size: 2.5rem;
+		text-indent: 45px;
+		margin-bottom: 5px;
+	}
+	& h3{
+		font-size: 1.5rem;
+		text-indent: 45px;
+		margin-bottom: 12px;
+	}
+}
+nav {
+	& ul {
+		text-decoration: none;
+		width: 100%;
+		padding-left: 0;
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		margin-top: 0;
+		background-color: steelblue;
+		justify-content: center;
+	}
+
+	& li {
+		flex-basis: 240px;
+		margin: 0;
+		padding: 10px 0;
+		position: relative;
+
+		& ul {
+			display: none;
+			position: absolute;
+			width: 240px;
+		}
+	}
+
+	& li:hover > ul, & li:focus-within > ul {
+		display: block;
+	}
+
+
+	& a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: white;
+	}
+
+		& a:focus, & a:hover {
+			text-decoration: underline;
+		}
+
+		& a#current {
+			border: 2px solid white;
+			border-radius: 12px;
+		}
+}
+
+main{
+	clear: left;
+	display: flex;
+}
+
+section {
+	flex-basis: 75%;
+	padding: 25px 30px 0;
+
+	& img {
+	float: left;
+	margin-right: 5px;
+	}
+	& h1{
+		font-size: 160%;
+		margin-bottom: 5px;
+	}
+	& h2{
+		font-size: 130%;
+		margin-bottom: 8px;
+	}
+	& h3{
+		font-size: 110%;
+		margin-bottom: 6px;
+	}
+	& a{
+		color: maroon;
+	}
+	& a:focus, & a:hover{
+		color: steelblue;
+	}
+	& p{
+		margin-bottom: 11px;
+		clear: left;
+	}
+}
+
+aside {
+	flex-basis: 25%;
+	padding: 5px 30px 25px;
+	margin: 25px 10px 20px;
+	border: 2px solid steelblue;
+	border-radius: 15px;
+	height: fit-content;
+
+	& h2 {
+		font-size: 130%;
+		margin-bottom: 8px;
+		color: maroon;
+	}
+
+	& ul {
+		line-height: 1.5;
+		list-style-type: none;
+		padding-left: 15px;
+	}
+
+	& a {
+		color: steelblue;
+	}
+
+	& a:focus, & a:hover {
+		color: maroon;
+	}
+}
+aside:first-of-type {
+	padding: 10px;
+}
+
+footer{
+	background-color: steelblue;
+	padding: 15px 30px;
+	font-size: 85%;
+	text-align: center;
+	color: white;
+}

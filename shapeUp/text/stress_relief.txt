@@ -1,0 +1,16 @@
+    <section>
+        <h1>Stress Relief</h1>
+        <p>We all encounter stress at one time or another. So it's important to be able to recognize stress and learn how to deal with it.</p>
+        <h3>What is stress?</h3>
+        <p>Stress is the feeling that people have when they are overloaded and struggling to cope with demands. Anything that poses a real or perceived challenge or threat to a person's well-being can cause stress.</p>
+        <p>Stress can also be a motivator. It can be essential to survival. The &quot;fight-or-flight&quot; mechanism helps us know when and how to respond to danger. But when this mechanism is triggered too easily, or when there are too many stressors at one time, it can become harmful to a person's mental and physical health.</p> 
+        <h3>How to manage your stress</h3>
+        <p>To help manage stress, try the following:</p>
+        <ul>
+            <li>Take a break from what you're doing</li>
+            <li>Exercise on a regular basis</li>
+            <li>Take time to smile and laugh</li>
+            <li>Get support from family and friends</li>
+            <li>Meditate</li>
+        </ul>
+    </section>
