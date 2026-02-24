@@ -1,0 +1,176 @@
+/*Name*/
+
+html{ 
+	background-image: url("../images/bg.jpeg");
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: .625em auto;
+	max-width: 1200px;
+	width: 75%;	
+	border: 3px solid steelblue;
+	box-shadow: 5px 5px 15px black, -5px 0 15px 5px black;
+	background-color: white;
+}
+h1, h2, h3, p {
+		margin:0;
+		padding:0;
+}
+a {
+	font-weight: bold;
+}
+
+header {
+	padding: .9375em 1.875em;
+	border-bottom: 3px solid steelblue;
+	background-image: linear-gradient(white, lightsteelblue);
+}
+header h2 {
+	color: steelblue;
+	font-style: italic;
+	font-size: 250%;
+	margin-bottom: .3125em;
+}
+header h3 {
+	font-size: 150%;
+	padding-bottom: .75em;
+}
+header h2, header h3 {
+	text-indent: 2.81rem;
+}
+header img {
+	float: left;
+	max-width: 140px;
+	width:11.67%;
+	min-width:105;
+}
+nav ul{
+	background-color: steelblue;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style-type:none;
+	padding-left: 0;
+	margin-top: 0; /*Remove white space between header and nav*/
+}
+nav li {
+	flex-basis: 240px;
+	padding: .625em 0;
+	position:relative;
+}
+nav a {
+	display:block;
+	color: white;
+	text-decoration:none;
+	text-align:center;
+}
+nav a:hover, nav a:focus {
+	text-decoration: underline;
+}
+nav a#current {
+	border: 3px solid white;
+	border-radius: 25px;
+}
+nav ul ul {
+	display: none;
+	position: absolute;
+	/*top: 0; */
+	width: 100%;
+}
+ul li:hover ul, ul li:focus ul {
+	display:block;
+}
+main {
+	display:flex;
+}
+
+section {
+	padding: 1.56em 1.875em 0;
+	flex-basis: 75%;
+}
+
+h1 {
+	font-size: 160%;
+	margin-bottom: .3125em;
+}
+section h2 {
+	font-size: 130%;
+	margin-bottom: .5em;
+}
+section h3 {
+	font-size: 110%;
+	margin-bottom: .375em;
+}
+section p {
+	margin-bottom: .69;
+	clear:left;
+}
+section a {
+	color:maroon;
+}
+section a:hover, section a:focus {
+	color: steelblue;
+}
+section img {
+	float:left;
+	margin-right: .3125em;
+}
+
+aside {
+	padding: .3125em 1.875em 1.56em;
+	margin: 1.56em .625em 1.25em;
+	border: 3px solid steelblue;
+	border-radius: 25px;
+	flex-basis: 25%;
+	height: fit-content;
+}
+aside h2 {
+		font-size: 130%;
+		margin-bottom: .5em;
+		color: maroon;
+}
+aside ul {
+	line-height: 1.5;
+	list-style-type:none;
+	padding-left: .3125em;
+	
+}
+aside a {
+		color: steelblue;
+}
+aside a:hover, aside a:focus {
+		color: maroon
+}
+aside:first-of-type {
+	padding: .625em;
+}
+
+footer {
+	background-color: steelblue;
+	padding: .9375em 1.875em;
+	font-size:85%;
+	text-align:center;
+}
+footer p {
+	color:white;
+}
+@media screen and (max-width:760px){
+	body{
+		width: 100%;
+		box-shadow: none;
+	}
+	section {width: 75%;}
+	aside {display: none;}
+}	
+@media screen and (max-width:440px){
+	aside {display: none;}
+	section {
+		width: 100%;
+		padding-left:.7812em;
+		padding-right:.9375em;
+	}
+	ul li:hover ul, ul li:focus ul {
+        	display: none;
+   	}
+	nav span {display: none;}
+}
