@@ -159,12 +159,12 @@ footer p {
 		width: 100%;
 		box-shadow: none;
 	}
-	section {width: 75%;}
+	main section {width: 75%;}
 	aside {display: none;}
 }	
 @media screen and (max-width:440px){
 	aside {display: none;}
-	section {
+	main section {
 		width: 100%;
 		padding-left:.7812em;
 		padding-right:.9375em;
