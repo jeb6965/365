@@ -1,15 +1,193 @@
 <!DOCTYPE html>
-
+<!-- Jordan Boykin -->
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Shape Up! | Calorie Counter</title>
+	<title>Shape Up! | Calories</title>
+	<link href="../styles/main.css" rel="stylesheet">
+	<style>
+		caption{
+			text-align: center;
+			font-weight: bold;
+			font-size: 200%;
+		}
+		table{
+			border: 2px solid black;
+			margin: 0 auto 15px auto;
+			padding: 0 5px;
+		}
+		thead{
+			text-align: left;
+			color: maroon;
+			font-size: 125%;
+		}
+		td, th{
+			width:20%
+		}
+		tbody th{
+			vertical-align: top;
+			text-align: left;
+		}
+		thead th:last-child, tbody td:last-child{
+			text-align: right;
+		}
+	</style>
+	
 </head>
 
 <body>
+	<header>
+		<a href="../index.html"><img src = "../images/shape_up_logo.png" alt = "Shape Up Logo"></a>
+		<h2>Shape Up!</h2>
+		<h3>Find the best fit for you</h3>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../strength/index.html">Strength Training</a></li>
+			<li><a href="../cardio/index.html">Cardio Exercises</a></li>
+			<li><a href="../stress/index.html">Stress Relief&#9660;</a>
+				<ul>
+					<li><a href="../stress/tips.html">5 Helpful Tips</a></li>
+					<li><a href="../stress/meditate.html">Meditation</a></li>
+					<li><a href="../stress/vipassana.html">Vipassana</a></li>
+				</ul>
+			</li>
+			<li><a href="index.html">Healthy Diet&#9660;</a>
+				<ul>
+					<li><a href="meals.html">Plan Your Meals</a></li>
+					<li><a href="#" id="current">Count your calories</a></li>
+					<li><a href="bmi.html">Calculate your BMI</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
 	<main>
-	    <h1>Calorie Counter</h1>
-		<h2>Under Construction</h2>	      
-    </main>
+		<aside>
+			<h2>Additional resources</h2>
+			<ul>
+				<li><a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html">Physical activity and health</a></li>
+				<li><a href="https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/stretching-and-flexibility-exercises">Stretching exercises</a></li>
+				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670">Strength training</a></li>
+				<li><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/aha-recs-for-physical-activity-in-adults">Cardiovascular training</a></li>
+				<li><a href="https://www.nccih.nih.gov/health/providers/digest/yoga-for-health-science">Yoga workout</a></li>
+			</ul>
+		</aside>
+		<section>
+			<table>
+				<caption>Calorie Counter</caption>
+				<thead>
+					<tr>
+						<th>Category</th>	
+						<th>Food</th>	
+						<th>Serving size</th>	
+						<th>Calories</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th rowspan="3">Beef</th>	
+						<td>Frankfurter,Beef</td> 
+						<td>1 each</td>	
+						<td>184</td>
+					</tr>
+					<tr>
+						<td>Ground Beef</td>	
+						<td>4 oz</td>	
+						<td>264</td>
+					</tr>
+					<tr>
+						<td>T-Bone Steak</td>	
+						<td>8 ounces</td>	
+						<td>402</td>
+					</tr>
+					<tr>
+						<th rowspan="3">Bread</th>	
+						<td>Bagel, plain</td>	
+						<td>1 bagel</td>	
+						<td>360</td>
+					</tr>
+					<tr>
+						<td>Bread, sliced</td>	
+						<td>1 slice</td>	
+						<td>60 to 80</td>
+					</tr>
+					<tr>
+						<td>English Muffin</td>	
+						<td>1</td>	
+						<td>135</td>
+					</tr>
+					<tr>
+
+						<th rowspan="2">Fruit</th>	
+						<td>Apple</td>	
+						<td>1 medium</td>	
+						<td>80</td>
+					</tr>
+					<tr>
+						<td>Banana</td>	
+						<td>1</td>	
+						<td>105</td>
+					</tr>
+					<tr>
+						<th rowspan="3">Vegetables</th>	
+						<td>Corn, fresh</td>	
+						<td>1 medium ear</td>	
+						<td>88</td>
+					</tr>
+					<tr>
+						<td>Carrot, raw</td>	
+						<td>1 medium</td>	
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>Celery</td>	
+						<td>1 large stalk</td>	
+						<td>9</td>
+					</tr>
+					<tr>
+
+						<th rowspan="6">Miscellaneous</th>	
+						<td>Milk, whole</td>
+						<td>1 cup</td>	
+						<td>157</td>
+					</tr>
+					<tr>
+						<td>Eggs</td>	
+						<td>1</td>	
+						<td>70</td>
+					</tr>
+					<tr>
+						<td>Peanut butter</td>	
+						<td>2 tablespoons</td>	
+						<td>188</td>
+					</tr>
+					<tr>
+						<td>Pasta</td>	
+						<td>1/2 cup dry</td>	
+						<td>200</td>
+					</tr>
+					<tr>
+						<td>Rice</td>	
+						<td>1 cup cooked</td>	
+						<td>204</td>
+					</tr>
+					<tr>
+						<td>Baked potato</td>	
+						<td>1 medium</td>	
+						<td>130</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4">Note: Contact us to get a detailed list of food calories.</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2026 Shape Up and Get Fit!</p>
+	</footer>
 </body>
 </html>
