@@ -49,8 +49,64 @@
 		<section>
 			<h1>Meal Plan Order Form</h1>
 			<p>Fill out the form as completely as possible and we will email you a weekly meal plan, customaized for you &mdash; <em>your</em> lifestyle, <em>your</em> goals, and <em>your</em> personal needs. (Asterisks (*) indicate required entries.)</p>
-			<form>
-				
+			<form action="meal_request.html" method="get">
+				<fieldset>
+					<legend>Tell us about yourself</legend>
+					<label for="fullname">*Full name:</label>
+					<input type="text" name="fullname" id="fullname">
+					<br>
+					<label for="email">*Email:</label>
+					<input type="email" name="email" id="email">
+					<br>
+
+					<label for="gender">Gender:</label>
+					<select name="gender" id="gender">
+						<option value="">Select your gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Prefer not to say">Prefer not to say</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Lifestyle and goals</legend>
+					<p>Which currently matches your lifestyle?</p>
+					<label for="active">
+						<input type="radio" id="active" name="lifestyle" value="active"> Active&nbsp;
+					</label>
+					<label for="moderate">
+						<input type="radio" id="moderate" name="lifestyle" value="moderate"> Moderate&nbsp;
+					</label>
+					<label for="sedentary">
+						<input type="radio" id="sedentary" name="lifestyle" value="sedentary"> Sedentary&nbsp;
+					</label>
+					<br><br>
+					<p>What are your weight goals?</p>
+					<label for="gainweight">
+						<input type="radio" id="gainweight" name="weightgoal" value="gain weight"> Gain weight&nbsp;
+					</label>
+					<label for="maintainweight">
+						<input type="radio" id="maintainweight" name="weightgoal" value="maintain weight"> Maintain weight&nbsp;
+					</label>
+					<label for="loseweight">
+						<input type="radio" id="loseweight" name="weightgoal" value="lose weight"> Lose weight&nbsp;
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Food preferences and restrictions</legend>
+					<p>Do you have any dietary restrictions? (Select all that apply)</p>
+					<label><input type="checkbox" name="vegetarian" id="vegetarian"> Vegetarian</label>
+					<label><input type="checkbox" name="glutenfree" id="glutenfree"> Gluten-free</label>
+					<label><input type="checkbox" name="kosher" id="kosher"> Kosher</label>
+					<label><input type="checkbox" name="lowsalt" id="lowsalt"> Low salt</label><br>
+					<label><input type="checkbox" name="other" id="other"> Other (please explain)</label><br>
+					<label for="comments">Additional details:</label>
+					<textarea name="comments" id="comments" placeholder=""></textarea>
+    			</fieldset>
+				<fieldset>
+					<legend>Process your information</legend>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Start over">
+				</fieldset>
 			</form>
 		</section>
 	</main>
