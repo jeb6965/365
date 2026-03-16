@@ -1,4 +1,4 @@
-/*Name*/
+/*Jordan Boykin*/
 :root{
 	--accent1: steelblue;
 	--lightAccent1: lightsteelblue;
@@ -49,10 +49,12 @@ header {
 	
 }
 nav {
-	
 	& ul {
 		background-color: var(--accent1);
-		
+		display: grid;
+		height: auto;
+		grid-template-columns:repeat(5, 20%);
+		justify-content: space-evenly;
 		list-style-type: none;
 		padding-left: 0;
 		margin-top: 0; /*Remove white space between header and nav */
@@ -89,10 +91,12 @@ nav {
 	}
 }
 main {
-	
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 25% 75%;
 }
 section {
-	
+	grid-row: 1 / 1; grid-column: 2 / 2;
 	padding: 25px 30px 0;
 	& h1 {
 		font-size: 160%;
@@ -122,7 +126,7 @@ section {
 	}
 }
 aside {
-	
+	grid-row: 1 / 1; grid-column: 1 / 2;
 	margin: 25px 10px 20px;
 	padding: 5px 30px 25px;
 	border: 2px solid var(--accent1);
@@ -155,4 +159,23 @@ footer {
 	color:white;
 	padding: 15px 30px;
 	padding: 15px 30px;
+}
+@media screen and (max-width:760px) {
+	body{
+		font-size: 90%;
+		box-shadow: none;
+	}
+	header img{
+		display: none;
+	}
+	main {
+		grid-template-rows: repeat(2, 100%);
+		grid-template-columns: 1fr;
+		section {
+			grid-row: 1 / 2; grid-column: 1 / 1;
+		}
+		aside {
+			grid-row: 2 / 2; grid-column: 1 / 1;
+		}
+	}
 }
