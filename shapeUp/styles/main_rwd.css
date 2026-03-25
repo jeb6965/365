@@ -169,7 +169,7 @@ footer p {
 		padding-left:.7812em;
 		padding-right:.9375em;
 	}
-	ul li:hover ul, ul li:focus ul {
+	ul li:hover > ul, ul li:focus > ul {
         	display: none;
    	}
 	nav span {display: none;}
