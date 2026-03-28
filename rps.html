@@ -11,22 +11,35 @@
 		"use strict";
         alert("Let's play rock, paper, scissors. The best 2 out of 3 wins!");
         const choice = ["r", "p", "s"];
-        let playerScore;
-        let computerScore;
-        let random;
-        while(playerScore < 3 && computerScore < 3){
-            playerChoice.toLowerCase() = prompt('What is your choice? Enter "r" for rock, "p" for paper, or "s" for scissors.');
-            while(!playerChoice in choice){
-                playerChoice.toLowerCase() = prompt('What is your choice? Enter "r" for rock, "p" for paper, or "s" for scissors.');
+        let playerChoice;
+        let computerChoice;
+        let randomNum;
+        let playerScore = 0;
+        let computerScore = 0;
+        while(playerScore < 2 && computerScore < 2){
+            playerChoice = prompt('What is your choice? Enter "r" for rock, "p" for paper, or "s" for scissors.');
+            playerChoice = playerChoice.toLowerCase()
+            while(!choice.includes(playerChoice)){
+                playerChoice = prompt('What is your choice? Enter "r" for rock, "p" for paper, or "s" for scissors.');
+                playerChoice = playerChoice.toLowerCase();
             }
-            random = Math.floor(Math.random() * 3);
-            switch(random){
+            randomNum = Math.floor(Math.random() * 3);
+            switch(randomNum){
                 case 0:
-                    if(choice === "r"){alert("Tie!")}
+                    if(playerChoice === "r"){alert("Tie!");}
+                    else if(playerChoice === "p"){alert("Player Wins!");}
+                    else alert("Computer Wins!");
+                    break;
                 case 1:
-                    if(choice === "p"){alert("Tie!")}
+                    if(playerChoice === "p"){alert("Tie!");}
+                    else if(playerChoice === "s"){alert("Player Wins!");}
+                    else alert("Computer Wins!");
+                    break;
                 case 2:
-                    if(choice === "s"){alert("Tie!")}
+                    if(playerChoice === "s"){alert("Tie!");}
+                    else if(playerChoice === "r"){alert("Player Wins!");}
+                    else alert("Computer Wins!");
+                    break;    
             }
         };
     </script>
