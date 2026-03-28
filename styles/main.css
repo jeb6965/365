@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    width: 90%;
+	max-width: 1024px;
+    margin: 1em auto;
+
+    display: grid;                         
+    grid-template: repeat(4, auto) / 1fr;  
+    grid-template-areas:                   
+        "head"
+        "navi"
+        "main"
+        "foot";
+}
+/* General styles for the page */
+h1, h2, h3 { 
+	line-height: 1.2; 
+	margin:0; 
+}
+h1, h2, h3, ul { 
+	padding: .25em 0; 
+}
+h1 { 
+	font-size: 175%; 
+}
+h2 { 
+	font-size: 150%;	
+}
+h3 { 
+	font-size: 125%; 
+}
+a { 
+	font-weight: bold; 
+}
+
+/* Specific styles for elements */
+header {
+    grid-area: head;        
+}
+header img {
+	display:block;
+	float:left;
+	margin: .5em 1.25em .5em 0;
+}
+header h2 {
+        font-size: 225%; 
+        color: #f2972e;
+        padding: 0;
+}
+header h3 { 
+        font-style: italic; 
+        padding-bottom: 1em;
+    }
+
+nav {
+    grid-area: navi;              
+    background-color: black;
+}
+nav ul {
+	list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+nav a {
+        display: block; 
+        padding: .25em 1em;
+        margin: .25em;
+        text-decoration: none; 
+        color: white;
+		text-align: center;
+    }
+nav a:hover, nav a:focus { 
+        text-decoration: underline;
+    }
+nav a#current { 
+        border: 2px solid;
+        border-radius: 10px;
+    }
+   
+main { 
+    grid-area: main;                                             
+}
+
+section {
+   padding-top: 1em;                
+}
+section ul {
+	margin: 0 2em; 
+}
+section a:link, section a:visited {
+	color: #931420; 
+}
+section a:hover, section a:focus { 
+	color: #f2972e 
+}
+section h2 {
+	margin-top: 1em;
+}
+
+aside {
+    background-color: #ffebc6;
+    height: fit-content;
+    padding: 1em 1.5em;
+    margin: 1em 0;
+    border-radius: 25px;    
+}
+aside h2 { 
+	padding: 0; 
+}
+aside h3 { 
+	color: #931420; 
+}
+aside ul { 
+	margin: 0 2em; 
+}
+aside a:link, aside a:visited { 
+	color: #931420; 
+}
+aside a:hover, aside a:focus { 
+	color: #f2972e 
+}
+
+footer {
+    grid-area: foot;            
+    margin-top: 24px;          
+    border-top: 2px solid #f2972e;
+    padding-top: 8px;
+}
+footer p {
+        font-size: 12.8px;
+        text-align: right;
+    }

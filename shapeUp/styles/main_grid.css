@@ -3,6 +3,19 @@
     display: grid;
     grid-template: 100px 200px / 200px 300px;
 } Rows / Columns, same with grid-template: 100px / repeat(2, 100px 1fr);*/
+ /*/* Step 1 — define on the container 
+.container {
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+/* Step 2 — assign each child 
+header  { grid-area: header; }
+aside   { grid-area: sidebar; }
+main    { grid-area: main; }
+footer  { grid-area: footer; }*/
 :root{
 	--accent1: steelblue;
 	--lightAccent1: lightsteelblue;
@@ -98,6 +111,7 @@ main {
 	display: grid;
 	grid-template-rows: auto;
 	grid-template-columns: 25% 75%;
+	gap: 5%;
 }
 section {
 	grid-row: 1 / 2; 

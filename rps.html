@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Jordan Boykin-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <script>
+		"use strict";
+        alert("Let's play rock, paper, scissors. The best 2 out of 3 wins!");
+        const choice = ["r", "p", "s"];
+        let playerScore;
+        let computerScore;
+        let random;
+        while(playerScore < 3 && computerScore < 3){
+            playerChoice.toLowerCase() = prompt('What is your choice? Enter "r" for rock, "p" for paper, or "s" for scissors.');
+            while(!playerChoice in choice){
+                playerChoice.toLowerCase() = prompt('What is your choice? Enter "r" for rock, "p" for paper, or "s" for scissors.');
+            }
+            random = Math.floor(Math.random() * 3);
+            switch(random){
+                case 0:
+                    if(choice === "r"){alert("Tie!")}
+                case 1:
+                    if(choice === "p"){alert("Tie!")}
+                case 2:
+                    if(choice === "s"){alert("Tie!")}
+            }
+        };
+    </script>
+	<h1>Thanks for playing!</h1>
+	<h2>Refresh to play again</h2>
+</body>
+</html>

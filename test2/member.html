@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>San Joaquin Valley Town Hall</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/form.css">
+</head>
+	
+<body>
+    <header>
+        <img src="images/logo.gif" alt="Town Hall Logo">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>Bringing cutting-edge speakers to the valley</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Get Tickets</a></li>
+            <li><a href="#" id="current">Become a Member</a></li>
+            <li><a href="contact.html">Contact Us</a></li>         
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Become a Member</h1>
+            <form action="register_account.html" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" autofocus required>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label>Membership type: </label>
+                <label for="junior">
+                    <input type="radio" id="junior" name="type" value="junior"> Junior&nbsp;
+                </label>
+                <label for="regular">
+                    <input type="radio" id="regular" name="type" value="regular"> Regular&nbsp;
+                </label>
+                <label for="charter">
+                    <input type="radio" id="charter" name="type" value="charter"> Charter&nbsp;<br>
+                </label>
+                
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                
+                <label for="verify">Verify Password:</label>
+                <input type="password" name="verify" id="verify" required>
+                
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </form>
+        </section>
+
+        <aside>
+			<h2>This season's guest speakers</h2>
+			<ul>
+				<li>January: <a href="#">David Brancaccio</a></li>
+				<li>February: <a href="#">Andrew Ross Sorkin</a></li>
+				<li>March: <a href="#">Amy Chua</a></li>
+				<li>April: <a href="#">Scott Sampson</a></li>
+				<li>May: <a href="#">Carlos Eire</a></li>
+				<li>June: <a href="#">Ronan Tynan</a></li>
+			</ul>
+          </aside>
+      </main>
+
+    <footer>
+        <p>&copy; Copyright San Joaquin Valley Town Hall.</p>
+    </footer>
+</body>
+</html>
