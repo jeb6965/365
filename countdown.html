@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--Jordan Boykin-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown</title>
+	<style>h1, h2 {text-align:center;}</style>
+</head>
+<body>
+	<h1>Countdown to Blastoff</h1>
+	<h2 id="rocket"></h2>
+    <script>
+		"use strict";
+        let rocket = document.querySelector("#rocket");
+        let countdown = time => {
+            let timer = setInterval(function(){
+                console.log(time);
+                rocket.innerHTML += time + "<br>";
+                time--;
+                if (time === 0){
+                    clearInterval(timer);
+                    let finish = () => { 
+                        rocket.innerHTML = '<img src="rocket.gif" alt="Blast Off!">';
+                    };
+                    setTimeout(finish, 1000);
+                };
+            },1000);
+        };
+	   let countdownStart = prompt("Enter a number to start the countdown.");
+       countdownStart = Number(countdownStart);
+       countdown(countdownStart);
+    </script>
+    
+</body>
+</html>
