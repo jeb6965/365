@@ -11,10 +11,10 @@
 		"use strict";
         alert("Let's play rock, paper, scissors. The best 2 out of 3 wins!");
         const choice = ["r", "p", "s"];
+        let winner;
         let playerChoice;
         let computerChoice;
-        let randomNum;
-        let playerScore = 0;
+        let playerScore = 0; 
         let computerScore = 0;
         while(playerScore < 2 && computerScore < 2){
             playerChoice = prompt('What is your choice? Enter "r" for rock, "p" for paper, or "s" for scissors.');
@@ -23,25 +23,25 @@
                 playerChoice = prompt('What is your choice? Enter "r" for rock, "p" for paper, or "s" for scissors.');
                 playerChoice = playerChoice.toLowerCase();
             }
-            randomNum = Math.floor(Math.random() * 3);
-            switch(randomNum){
-                case 0:
-                    if(playerChoice === "r"){alert("Tie!");}
-                    else if(playerChoice === "p"){alert("Player Wins!");}
-                    else alert("Computer Wins!");
-                    break;
-                case 1:
-                    if(playerChoice === "p"){alert("Tie!");}
-                    else if(playerChoice === "s"){alert("Player Wins!");}
-                    else alert("Computer Wins!");
-                    break;
-                case 2:
-                    if(playerChoice === "s"){alert("Tie!");}
-                    else if(playerChoice === "r"){alert("Player Wins!");}
-                    else alert("Computer Wins!");
-                    break;    
+            computerChoice = choice[Math.floor(Math.random() * 3)];
+            if (playerChoice === computerChoice){
+                winner = "It's a tie.";
             }
+            else{
+                if ((playerChoice == "r" && computerChoice == "p") || 
+                    (playerChoice == "p" && computerChoice == "s") || 
+                    (playerChoice == "s" && computerChoice == "r")){
+                    computerScore ++
+                    winner = "Computer wins.";
+                }
+                else{ 
+                    playerScore++
+                    winner = "Player wins.";
+                }
+            };
+                alert(`${winner} Computer chose ${computerChoice} and player chose ${playerChoice}. Score is computer: ${computerScore}, player: ${playerScore}`);
         };
+        alert(`Game over. Final score is Computer: ${computerScore}, Player: ${playerScore}`);
     </script>
 	<h1>Thanks for playing!</h1>
 	<h2>Refresh to play again</h2>
